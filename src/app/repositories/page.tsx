@@ -1,11 +1,12 @@
 import RepoCard from '@/components/RepoCard'
+import Link from 'next/link'
 import React from 'react'
 
 function Repositories() {
     return (
         <>
-            <div className='min-h-screen flex flex-row ' >
-                <div className='w-1/4 h-screen border-2 border-black ' >
+            <div className='min-h-screen flex flex-col md:flex-row ' >
+                <div className='w-1/4 h-screen hidden md:block  ' >
                     <div className='m-4' >
                         <h4 className='text-primary' >Filter by</h4>
                         <h4 className='text-primary underline' >Languages</h4>
@@ -33,20 +34,21 @@ function Repositories() {
 
                     </div>
                 </div>
-                <div className='w-full h-screen border-2 flex flex-col items-center  justify-start border-black' >
-                    <button className='self-end mx-8 mt-4 hover:bg-secondary transition-all duration-150 ' >Add Repo</button>
+                <div className='w-full min-h-screen border-2 flex flex-col items-center  justify-start ' >
+                    <Link className='self-end mx-8 mt-4' href={'addrepo'} >                    <button className=' hover:bg-secondary transition-all duration-150 ' >Add Repo</button>
+                    </Link>
                     <h4 className='mt-10 text-primary' >Search for repositories</h4>
 
                     <input className="shadow mt-2 appearance-none border rounded w-1/2 py-2 px-3 text-gray-700 leading-tight  focus:outline-none border-black focus:shadow-outline" id="username" type="text" placeholder="search" />
-                    <div className='overflow-y-scroll scrollbar-hide' >
-                        <RepoCard />
-                        <RepoCard />
-                        <RepoCard />
 
-                    </div>
+                    <RepoCard />
+                    <RepoCard />
+                    <RepoCard />
+
+
 
                 </div>
-                <div className='w-1/3 h-screen border-2 border-black' >
+                <div className='lg:w-1/3 lg:h-screen  ' >
                     <div className='p-4 m-4 border rounded-md' >
                         <h4 className='text-primary' >Sponsor open source projects you depend on</h4>
                         <h6 className='mt-4' >Contributors are working behind the scenes to make open source better for everyone—give them the help and recognition they deserve.</h6>

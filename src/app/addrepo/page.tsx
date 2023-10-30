@@ -2,7 +2,9 @@ import React from 'react'
 
 function AddRepo() {
     return (
-        <div>AddRepo</div>
+        <div className='min-h-screen' >
+
+        </div>
     )
 }
 

@@ -7,7 +7,7 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'GitSearch',
+  title: 'gitsearch',
   description: 'Git Search, a better alternative to github search',
 }
 

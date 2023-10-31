@@ -11,10 +11,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#7f56d9",
-        secondary: "#101828",
-        danger: "#d92d20",
-        success: "#10a959",
+        primary: "#1d3557",
+        secondary: "#457b9d",
+        ternary:'#e63946',
+        title:'#e63946'
+        
       },
     },
   },

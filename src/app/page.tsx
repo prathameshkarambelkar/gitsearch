@@ -1,9 +1,18 @@
-import React from "react"
+import React from "react";
 
-export default function Home(): JSX.Element {
+interface Props {}
+
+const Home: React.FC<Props> = () => {
   return (
-<>
-<div className=""></div>
-</>
-  )
-}
+    <>
+      <div className="">
+        <p>Pranit</p>
+      </div>
+    </>
+  );
+};
+
+export default Home;
+
+
+
